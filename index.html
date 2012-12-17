@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>konarak.github.com</title>
+		<title>konarak.in</title>
 		<meta name="author" content="Konarak Ratnakar">
 		<link rel="stylesheet" media="all" href="style.min.css">
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans+Mono' rel='stylesheet' type='text/css'>
@@ -12,9 +12,7 @@
 
 <script src="terminal.min.js"></script>
 <script>
-// Convert the 'terminal' DOM element into a live terminal.
-// This example defines several custom commands for the terminal.
-var terminal = new Terminal('terminal', {welcome: 'So you\'re finally here, eh? Enter \'help\' to get started.<br><br>',prompt: 'guest@konarak.github.com:~', separator: '$'}, {
+var terminal = new Terminal('terminal', {welcome: 'So you\'re finally here, eh? Enter \'help\' to get started.<br><br>',prompt: 'guest@konarak.in:~', separator: '$'}, {
 	execute: function(cmd, args) {
 		switch (cmd) {
 			case 'clear':
@@ -22,22 +20,19 @@ var terminal = new Terminal('terminal', {welcome: 'So you\'re finally here, eh? 
 				return '';
 
 			case 'about':
-				return '<br>Hi, I\'m Konarak from Gujarat, India. I write code, surf the internetz,<br> read stuff, contribute to wikipedia, and talk insane.<br><br>';
+				return '<br>Hi, I\'m Konarak from India. I write code, surf the internets,<br> read stuff, edit wikis, and talk.<br><br>';
 
 			case 'links':
 				return '<br><a href="https://github.com/konarak" target="_blank">github.com/konarak</a><br><a href="https://www.bitbucket.org/konarak" target="_blank">bitbucket.com/konarak</a>&#09;	(You don\'t expect anything to be there, do you?)<br><a href="https://twitter.com/prof__utonium" target="_blank">twitter.com/prof__utonium</a><br><a href="https://www.facebook.com/Konarak.Ratnakar" target="_blank">facebook.com/Konarak.Ratnakar</a><br><br>';
 
 			case 'help':
-				return '<br><pre>about        returns information about the site curator</pre><pre>clear        clears the terminal</pre><pre>contact      returns contact information</pre><pre>hardware     returns my home hardware details</pre><pre>help         returns this information</pre><pre>links        returns links to social networking/coding sites</pre><pre>software     returns my home software details</pre><br>For now this terminal returns pretty basic information.<br>Boredom shall bring you more commands to play with.<br><br>';
+				return '<br><pre>about        returns information about Konarak</pre><pre>clear        clears the terminal window</pre><pre>contact      returns contact information</pre><pre>help         returns this information</pre><pre>links        returns links to social networking/coding sites</pre><pre>tools        returns my hardware/software details</pre><br><br>';
 
 			case 'contact':
-				return '<br>You can email me at konarak.11 AT gmail DOT com<br> You can also ping me on IRC (freenode), my nick is kondi.<br> To get a list of my social networking/coding profiles you can type \'links\'.<br><br>';
+				return '<br>You can email me at konarak.11 AT gmail DOT com<br> You can also ping me on IRC (freenode), my nick is kondi.<br> To see a list of my social networking/coding profile(s) you can type \'links\'.<br><br>';
 
-			case 'hardware':
-				return '<br>I use quite an old computer. It\'s got an Intel pentium 4 CPU<br>and 1 GB of memory. I still use that ginormous CRT monitor.<br><br>'
-
-			case 'software':
-				return '<br>I\'ve a dual boot system with Windows and a pimped Xubuntu.<br>Other software that I use include Terminator, Irssi, Mutt,<br>Vim, Sublime Text 2, Google Chrome, Mutt, Gimp and the list goes on.<br><br>'
+			case 'tools':
+				return '<br><b>Hardware</b><br><br>I use quite an old computer. It\'s got an Intel pentium 4 CPU<br>and 1 GB of memory. I still use a ginormous CRT monitor.<br><br><b>Software</b><br><br>Xubuntu, Zsh, Irssi, Vim and the list goes on...<br><br>'
 
 			default:
 				// Unknown command.
