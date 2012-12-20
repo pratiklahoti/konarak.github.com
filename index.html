@@ -10,6 +10,7 @@
 <body>
 <div id="terminal"></div>
 
+<!-- Terminal Instance -->
 <script src="terminal.min.js"></script>
 <script>
 var terminal = new Terminal('terminal', {welcome: 'So you\'re finally here, eh? Enter \'help\' to get started.<br><br>',prompt: 'guest@konarak.in:~', separator: '$'}, {
@@ -41,6 +42,23 @@ var terminal = new Terminal('terminal', {welcome: 'So you\'re finally here, eh? 
 	}
 });
 </script>
+<!-- Terminal Instance end-->
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37173784-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Google Analytics end -->
 
 </body>
 </html>
